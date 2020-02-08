@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhangtao.androidlearndemo">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity_thr_recycleview"></activity>
+        <activity android:name=".activity_thr_intent">
+            <intent-filter>
+                <action android:name="com.zhangtao.androidlearndemo.intent" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="info" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.zhangtao.androidlearndemo.intent" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity_sec_Activity" />
+        <activity android:name=".activity_sec_Sqlite" />
+        <activity android:name=".activity_thr_multipleChoose" />
+        <activity android:name=".activity_thr_singleChoose" />
+        <activity android:name=".activity_sec_ui" />
+        <activity android:name=".activity_thr_SharePreference" />
+        <activity android:name=".activity_thr_toSdCrad" />
+        <activity android:name=".activity_thr_writefile" />
+        <activity android:name=".activity_sec_setdata" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
