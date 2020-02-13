@@ -8,9 +8,9 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button btnP3,btn2_1,btnp4, btnp5;
+    private Button btnP3,btn2_1,btnp4, btnp5, btnBroadcasst;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnp4.setOnClickListener(this);
         btnp5 = findViewById(R.id.btn_activity);
         btnp5.setOnClickListener(this);
+        btnBroadcasst = findViewById(R.id.btn_broadcast);
+        btnBroadcasst.setOnClickListener(this);
     }
 
     @Override
@@ -47,6 +49,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(MainActivity.this, activity_sec_Activity.class);
                 startActivity(intent);
                 break;
+            case R.id.btn_broadcast:
+                intent = new Intent(MainActivity.this, activity_sec_Broadcast.class);
+                startActivity(intent);
+                break;
+
         }
     }
 }
