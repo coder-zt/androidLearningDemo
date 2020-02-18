@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity_sec_setdata">
+    tools:context=".second_save_data.activity_sec_setdata">
 
     <Button
         android:id="@+id/btn_writeFile"

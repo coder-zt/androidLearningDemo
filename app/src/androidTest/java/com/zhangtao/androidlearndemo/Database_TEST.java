@@ -1,10 +1,11 @@
 package com.zhangtao.androidlearndemo;
 
 import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
+
+import com.zhangtao.androidlearndemo.thrid_sqlite_database.databases.db_Dao;
 
 import org.junit.runner.RunWith;
 

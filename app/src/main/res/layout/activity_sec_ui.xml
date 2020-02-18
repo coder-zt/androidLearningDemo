@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity_sec_ui">
+    tools:context=".frist_UI_demo.activity_sec_ui">
     <Button
         android:id="@+id/btn_recycleview"
         android:layout_width="match_parent"

@@ -7,13 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.zhangtao.androidlearndemo.fifth_broadcast_receive.activity_sec_Broadcast;
+import com.zhangtao.androidlearndemo.fourth_activity_demo.activity_sec_Activity;
+import com.zhangtao.androidlearndemo.frist_UI_demo.activity_sec_ui;
+import com.zhangtao.androidlearndemo.second_save_data.activity_sec_setdata;
+import com.zhangtao.androidlearndemo.sixth_service_demo.activity_sec_Service;
+import com.zhangtao.androidlearndemo.thrid_sqlite_database.activity_sec_Sqlite;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button btnP3,btn2_1,btnp4, btnp5, btnBroadcasst;
+    private Button btnP3,btn2_1,btnp4, btnp5, btnBroadcasst,btnService;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+
     }
 
     private void initView() {
@@ -27,6 +35,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnp5.setOnClickListener(this);
         btnBroadcasst = findViewById(R.id.btn_broadcast);
         btnBroadcasst.setOnClickListener(this);
+        btnService = findViewById(R.id.btn_service);
+        btnService.setOnClickListener(this);
     }
 
     @Override
@@ -53,7 +63,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(MainActivity.this, activity_sec_Broadcast.class);
                 startActivity(intent);
                 break;
-
+            case R.id.btn_service:
+                intent = new Intent(MainActivity.this, activity_sec_Service.class);
+                startActivity(intent);
+                break;
         }
     }
 }

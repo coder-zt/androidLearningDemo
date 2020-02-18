@@ -46,4 +46,12 @@
         android:textAllCaps="false"
         android:textSize="28sp"/>
 
+    <Button
+        android:id="@+id/btn_service"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Service(p7)"
+        android:textAllCaps="false"
+        android:textSize="28sp"/>
+
 </LinearLayout>
